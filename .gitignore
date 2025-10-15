@@ -1,0 +1,19 @@
+# Python
+__pycache__/
+*.pyc
+
+# Entorno
+.env
+*.env
+
+# Datos generados por la app
+data/
+app/data/
+*/data/
+
+# FastAPI/ADMS export
+*.ndjson
+*.csv
+
+# Docker
+*.log
