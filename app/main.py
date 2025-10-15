@@ -1,5 +1,6 @@
 from fastapi import FastAPI
 from app.routers import adms as adms_router
+from app.routers import zk
 
 app = FastAPI()
 
@@ -12,3 +13,5 @@ def health():
     return {"status": "healthy"}
 
 app.include_router(adms_router.router) 
+app.include_router(zk.router)
+
